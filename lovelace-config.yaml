@@ -1,0 +1,35 @@
+# ============================================================
+# CORRECTED Universal Remote Card Config for Fire TV
+# Entity IDs are correct - update to match YOUR Fire TV IP
+# ============================================================
+views:
+  - type: sections
+    sections:
+      - type: grid
+        cards:
+          - type: custom:universal-remote-card
+            platform: Fire TV
+            remote_id: remote.fire_tv_192_168_1_17
+            media_player_id: media_player.fire_tv_192_168_1_17
+            rows:
+              - - power
+                - home
+                - back
+                - menu
+              - - up
+                - left
+                - center
+                - right
+                - down
+              - - volume_up
+                - volume_down
+                - volume_mute
+              - - rewind
+                - play_pause
+                - fast_forward
+              - - netflix
+                - primevideo
+                - youtube
+                - disney
+            custom_actions: []
+        column_span: 1
