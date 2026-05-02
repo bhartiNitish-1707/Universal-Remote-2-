@@ -1,0 +1,41 @@
+{
+  "title": "Firemote",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Firemote",
+        "description": "Configure a Firemote device to expose remote and media player entities.",
+        "data": {
+          "name": "Device name",
+          "host": "Device host or IP"
+        }
+      }
+    }
+  },
+  "services": {
+    "send_key": {
+      "name": "Send key",
+      "description": "Send a key command to the Firemote remote."
+    },
+    "power": {
+      "name": "Power",
+      "description": "Send a power command to the Firemote device."
+    },
+    "navigation": {
+      "name": "Navigation",
+      "description": "Send a navigation command to the Firemote remote."
+    },
+    "volume": {
+      "name": "Volume",
+      "description": "Send a volume command to the Firemote device."
+    },
+    "play_pause": {
+      "name": "Play / Pause",
+      "description": "Toggle play/pause on the Firemote media player."
+    },
+    "launch_app": {
+      "name": "Launch App",
+      "description": "Launch an app through Firemote."
+    }
+  }
+}

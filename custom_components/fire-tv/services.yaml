@@ -1,0 +1,57 @@
+send_key:
+  name: Send key
+  description: Send a key command to a Firemote remote entity.
+  fields:
+    entity_id:
+      description: Optional remote entity ID to target.
+      example: remote.fire_tv_192_168_1_17
+    key:
+      description: Command key to send.
+      example: POWER
+power:
+  name: Power
+  description: Toggle the power state using Firemote.
+  fields:
+    entity_id:
+      description: Optional entity ID to target.
+      example: remote.fire_tv_192_168_1_17
+    state:
+      description: Power action to perform.
+      example: on
+navigation:
+  name: Navigation
+  description: Send a navigation command to Firemote.
+  fields:
+    entity_id:
+      description: Optional entity ID to target.
+      example: remote.fire_tv_192_168_1_17
+    direction:
+      description: Navigation direction or button command.
+      example: up
+volume:
+  name: Volume
+  description: Send a volume command to Firemote.
+  fields:
+    entity_id:
+      description: Optional entity ID to target.
+      example: remote.fire_tv_192_168_1_17
+    level:
+      description: Volume level or step amount.
+      example: 0.5
+play_pause:
+  name: Play / Pause
+  description: Toggle play/pause on a Firemote media player.
+  fields:
+    entity_id:
+      description: Optional media player entity ID to target.
+      example: media_player.apple_tv
+launch_app:
+  name: Launch app
+  description: Launch an application via Firemote.
+  fields:
+    entity_id:
+      description: Optional remote entity ID to target.
+      example: remote.apple_tv
+    app:
+      description: Application identifier to launch.
+      example: Netflix
